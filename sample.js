@@ -17,6 +17,10 @@ function change(){
     var mongon = document.getElementById("color").placeholder;
     //ここは値が渡せてるかの確認用
     //confirm(color);
+    if (!color){
+        alert("入力してからボタンをクリックしてください");
+    }
+
     ctx.fillStyle = color;
     ctx.arc(150,150,75,0*Math.PI,2*Math.PI,true);
     ctx.fill();
